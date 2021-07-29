@@ -5,7 +5,7 @@ const app = express();
 const dotenv = require('dotenv');
 
 // Connection to the MongoDB Database
-require('./db');  // OR
+require('./server/db');  // OR
 // require('./database');
 
 app.use(cors());
@@ -25,7 +25,7 @@ app.get('*', (req, res) => {
     res.sendFile(path.join(__dirname, '../build'))
 })
 
-app.use(require("./routes"));
+app.use(require("./server/routes"));
 
 const port = process.env.PORT || 5000;
 app.listen(port, () => {
