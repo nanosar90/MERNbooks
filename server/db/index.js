@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const dotenv = require('dotenv');
 
-const db = mongoose.connect(`mongodb+srv://nathan:${process.env.REACT_APP_GOOGLE_KEY}@cluster0.dfgvs.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`, {
+const db = mongoose.connect(`mongodb+srv://nathan:password1234@cluster0.dfgvs.mongodb.net/googleBooks?retryWrites=true&w=majority`, {
     useNewUrlParser: true,
     useFindAndModify: false
 })

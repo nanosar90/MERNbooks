@@ -2,7 +2,7 @@ import axios from 'axios'
 
 const getBooks = (searchTerm) => {
     const url = 'https://www.googleapis.com/books/v1/volumes'
-    let searchUrl = `${url}?q=${searchTerm}&key=${process.env.REACT_APP_BOOK_API_KEY}`
+    let searchUrl = `${url}?q=${searchTerm}&key=AIzaSyDayJtAeTviJsqUPwR1UHRMCdxsbNztLWs`
     return axios.get(searchUrl)
 }
 
