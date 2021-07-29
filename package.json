@@ -20,7 +20,7 @@
     "web-vitals": "^1.0.1"
   },
   "scripts": {
-    "start": "if-env NODE_ENV=production && npm run start:prod || npm run start:dev",
+    "start": "react-scripts run",
     "start:dev": "concurrently \"nodemon --ignore 'client/*'\" \"npm run client\"",
     "build": "react-scripts build",
     "test": "react-scripts test",
